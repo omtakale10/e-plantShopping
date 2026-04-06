@@ -1,12 +1,25 @@
-import ProductList from "./components/ProductList";
-import CartItem from "./components/CartItem";
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <h1>🌿 Paradise Nursery</h1>
-      <ProductList />
-      <CartItem />
+    <div className="app">
+      <div className="landing-page">
+        
+        {/* REQUIRED TEXT */}
+        <h1>Welcome to Paradise Nursery</h1>
+
+        <p>
+          Discover a wide variety of plants to decorate your home and
+          create a healthy environment.
+        </p>
+
+        {/* REQUIRED BUTTON */}
+        <button className="get-started-btn">
+          Get Started
+        </button>
+
+      </div>
     </div>
   );
 }
